@@ -1,9 +1,13 @@
 import scrapy
-class WebSpider(scrapy.Spider):
+from scrapy.spiders import SitemapSpider, Rule
+from scrapy.linkextractors import LinkExtractor
+from scrapy.http import Request
+
+class WebSpider(SitemapSpider):
     name = "web_spider"
-    start_urls = ['https://www.canada.ca/en/employment-social-development/services/funding.html']
-    def parse(self, response):
-        page = response.url.split("/")[-2]
-        filename = 'funding-%s.html' % page
-        with open(filename, 'wb') as f:
-            f.write(response.body)
+    allowed_domains = ['www.canada.ca']
+    start_urls = ['https://www.canada.ca/en/services/youth.sitemap.xml']
+    sitemap_rules = [('/programs/', 'parse_page')]
+    
+    def parse_page(self, response):
+        print(response.body)
