@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/main.css" />
+
+    <title>Questionnaire</title>
+  </head>
+  <body>
+    <div class="row p-3">
+      <div class="col-lg-10">
+        <h1 class="display-4">Tell us about yourself</h1>
+      </div>
+      <div class="col-lg-2">
+        <button class="btn btn-warning px-5 button">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <form>
+      <div class="row p-4">
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>Age</h6>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="age16-18"
+                name="age"
+              />
+              <label class="custom-control-label" for="age16-18"
+                >16-18 years</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="age19-21"
+                name="age"
+              />
+              <label class="custom-control-label" for="age19-21"
+                >19-21 years</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="age22+"
+                name="age"
+              />
+              <label class="custom-control-label" for="age22+"
+                >22-25 years</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>Family Income</h6>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="income20"
+                name="income"
+              />
+              <label class="custom-control-label" for="income20"
+                >Less than 20k</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="income45"
+                name="income"
+              />
+              <label class="custom-control-label" for="income45">20k-45k</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="income140k"
+                name="income"
+              />
+              <label class="custom-control-label" for="income140k"
+                >46k-140k</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="incomeOther"
+                name="income"
+              />
+              <label class="custom-control-label" for="incomeOther"
+                >141k+</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>Person with a Disability</h6>
+            <p class="question">
+              A person with a disability has long-term or recurring physical,
+              mental, sensory, psychiatric or learning impairment. Are you a
+              person with a disability?
+            </p>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="disabilityYes"
+                name="disability"
+              />
+              <label class="custom-control-label" for="disabilityYes"
+                >Yes</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="disabilityNo"
+                name="disability"
+              />
+              <label class="custom-control-label" for="disabilityNo">No</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-4">
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>Gender</h6>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="genderMale"
+                name="gender"
+              />
+              <label class="custom-control-label" for="genderMale">Male</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="genderFemale"
+                name="gender"
+              />
+              <label class="custom-control-label" for="genderFemale"
+                >Female</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="genderOther"
+                name="gender"
+              />
+              <label class="custom-control-label" for="genderOther"
+                >Other</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>Visible Minority</h6>
+            <p class="question">
+              A person in a visible minority group is someone who is non-white
+              in color/race. Are you a memeber of a visible minority group?
+            </p>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="minorityYes"
+                name="minority"
+              />
+              <label class="custom-control-label" for="minorityYes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="minorityNo"
+                name="minority"
+              />
+              <label class="custom-control-label" for="minorityNo">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>City</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row p-4">
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>Sexual Orientation</h6>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="heterosexual"
+                name="sexualOrientation"
+              />
+              <label class="custom-control-label" for="heterosexual"
+                >Heterosexual</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="homosexual"
+                name="sexualOrientation"
+              />
+              <label class="custom-control-label" for="homosexual"
+                >Homosexual</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="bisexual"
+                name="sexualOrientation"
+              />
+              <label class="custom-control-label" for="bisexual"
+                >Bisexual</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="soOther"
+                name="sexualOrientation"
+              />
+              <label class="custom-control-label" for="soOther">Other</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>Aboriginal Person</h6>
+            <p class="question">
+              An Aboriginal person is a North American Indian or a member of
+              First Nation, a Metis or Inuits. Are you an Aboriginal person?
+            </p>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="aboriginalYes"
+                name="aboriginal"
+              />
+              <label class="custom-control-label" for="aboriginalYes"
+                >Yes</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="aboriginalNo"
+                name="aboriginal"
+              />
+              <label class="custom-control-label" for="aboriginalNo">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-2">
+            <h6>Misc</h6>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
